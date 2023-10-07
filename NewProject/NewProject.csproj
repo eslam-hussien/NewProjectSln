@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AB066028-5EEF-40B1-BAF5-67E9AA117CA5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>NewProject</RootNamespace>
+    <AssemblyName>NewProject</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1001\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Customer.cs" />
+    <Compile Include="Employee.cs" />
+    <Compile Include="Export.cs" />
+    <Compile Include="ExportLog.cs" />
+    <Compile Include="تقرير تحويل الاصناف.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="تقرير تحويل الاصناف.Designer.cs">
+      <DependentUpon>تقرير تحويل الاصناف.cs</DependentUpon>
+    </Compile>
+    <Compile Include="تقرير الاصناف القديمة.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="تقرير الاصناف القديمة.Designer.cs">
+      <DependentUpon>تقرير الاصناف القديمة.cs</DependentUpon>
+    </Compile>
+    <Compile Include="تقرير الاصناف القريبة للانتهاء.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="تقرير الاصناف القريبة للانتهاء.Designer.cs">
+      <DependentUpon>تقرير الاصناف القريبة للانتهاء.cs</DependentUpon>
+    </Compile>
+    <Compile Include="القائمة.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="القائمة.Designer.cs">
+      <DependentUpon>القائمة.cs</DependentUpon>
+    </Compile>
+    <Compile Include="المخزن.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="المخزن.Designer.cs">
+      <DependentUpon>المخزن.cs</DependentUpon>
+    </Compile>
+    <Compile Include="الصنف.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="الصنف.Designer.cs">
+      <DependentUpon>الصنف.cs</DependentUpon>
+    </Compile>
+    <Compile Include="المورد.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="المورد.Designer.cs">
+      <DependentUpon>المورد.cs</DependentUpon>
+    </Compile>
+    <Compile Include="العميل.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="العميل.Designer.cs">
+      <DependentUpon>العميل.cs</DependentUpon>
+    </Compile>
+    <Compile Include="تحويل.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="تحويل.Designer.cs">
+      <DependentUpon>تحويل.cs</DependentUpon>
+    </Compile>
+    <Compile Include="تقرير المخزن.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="تقرير المخزن.Designer.cs">
+      <DependentUpon>تقرير المخزن.cs</DependentUpon>
+    </Compile>
+    <Compile Include="اذن التوريد.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="اذن التوريد.Designer.cs">
+      <DependentUpon>اذن التوريد.cs</DependentUpon>
+    </Compile>
+    <Compile Include="تقرير الصنف.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="تقرير الصنف.Designer.cs">
+      <DependentUpon>تقرير الصنف.cs</DependentUpon>
+    </Compile>
+    <Compile Include="اذن الصرف.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="اذن الصرف.Designer.cs">
+      <DependentUpon>اذن الصرف.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Import.cs" />
+    <Compile Include="ImportLog.cs" />
+    <Compile Include="Model1.cs" />
+    <Compile Include="Product.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Store.cs" />
+    <Compile Include="Supplier.cs" />
+    <Compile Include="sysdiagram.cs" />
+    <Compile Include="Transfer.cs" />
+    <Compile Include="Unit.cs" />
+    <EmbeddedResource Include="تقرير الاصناف القريبة للانتهاء.resx">
+      <DependentUpon>تقرير الاصناف القريبة للانتهاء.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="تقرير الاصناف القديمة.resx">
+      <DependentUpon>تقرير الاصناف القديمة.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="تقرير تحويل الاصناف.resx">
+      <DependentUpon>تقرير تحويل الاصناف.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="القائمة.resx">
+      <DependentUpon>القائمة.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="المخزن.resx">
+      <DependentUpon>المخزن.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="الصنف.resx">
+      <DependentUpon>الصنف.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="المورد.resx">
+      <DependentUpon>المورد.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="العميل.resx">
+      <DependentUpon>العميل.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="تحويل.resx">
+      <DependentUpon>تحويل.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="تقرير المخزن.resx">
+      <DependentUpon>تقرير المخزن.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="اذن التوريد.resx">
+      <DependentUpon>اذن التوريد.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="تقرير الصنف.resx">
+      <DependentUpon>تقرير الصنف.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="اذن الصرف.resx">
+      <DependentUpon>اذن الصرف.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
